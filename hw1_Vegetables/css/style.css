@@ -1,0 +1,166 @@
+* {
+  margin:0px;
+  padding: 0px;
+}
+
+html {
+  background-color: #EDF2C5;
+  max-width: 1260px;
+  max-height: 940px;
+  margin: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.fonts {
+  font-family: Arial Black;
+  color: #EDF2C5;
+  font-size: 16px;
+}
+
+.btn-icon a{
+  margin-right: -4px;
+}
+
+.btn-account {
+  margin-top: -7px;
+  display: inline-block;
+  background-color: #EDF2C5;
+}
+
+.btn-account a {
+  margin-left: 8px;
+  padding: 5px 9px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid #75874F;
+  color: #778A50;
+  font-size: 12px;
+  font-family: Arial Black;
+}
+
+#login {
+  margin-right: -15px;
+}
+
+.frame {
+  width: 413px;
+  background-color: #889C5B;
+  border-radius: 3px;
+  padding: 16px 0px 16px 31px;
+  margin: 17px 0px;
+}
+
+.menu ul{
+  background-color: #889C5B;
+  border-radius: 3px;
+  margin: 10px 0px;
+  padding: 0;
+}
+
+.menu li {
+  list-style: none;
+  float: left;
+  padding: 16px 29px 16px 31px;
+}
+
+.menu a{
+  display: block;
+  text-decoration: none;
+}
+
+
+header {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+header > div {
+  font-size: 44px;
+  font-family: Arial Black;
+  color: #889C5B;
+}
+
+#img-main-pumpkin {
+  margin-bottom: 15px;
+}
+
+.removebottom {
+  font-size: 0;
+}
+
+.img-vegetables img {
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-left: -12px;
+}
+
+.sidebar {
+  margin-bottom: 34px;
+}
+
+.left-sidebar,.left-header,.btn-icon,.btn-account {
+  display: inline-block;
+  float: left;
+}
+
+.right-sidebar,.right-header {
+  display: inline-block;
+  float: right;
+}
+
+.contact-area {
+  background-color: #F5F8D9;
+  width: 414px;
+  height: 110px;
+  padding: 15px;
+  margin: auto;
+}
+
+.contact-area p {
+  font-family: Arial;
+  font-size: 12px;
+  color: #898989;
+  padding: 15px;
+  margin: -15px;
+}
+
+#line-horizontal {
+  max-width: 413px;
+  margin: 15px 0px;
+  border-width: 1.25px;
+  border-color: #898989;
+}
+
+#line-vertical {
+  margin: 0px 2px;
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+}
+
+footer{
+  margin-left: -160px;
+  margin-right: -160px;
+  background-color: #889C5B;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+  font-family: Arial Black;
+  color: #EDF2C5;
+  padding: 24px 0px;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
