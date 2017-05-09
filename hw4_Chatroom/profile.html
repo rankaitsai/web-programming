@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User info update</title>
+  <!-- Firebase JS -->
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+
+  <!-- Material Design Lite  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Custom JS/CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title mdl-card--expand mdl-color--light-blue-600">
+      <h2 class="mdl-card__title-text">USER INFO UPDATE</h2>
+    </div>
+
+    <div class="mdl-card__supporting-text">
+      <!-- input text -->
+      <!-- Textfield with Floating Label -->
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="username">
+          <label class="mdl-textfield__label" for="username">UserName</label>
+        </div>
+      </form>
+      <!-- Numeric Textfield with Floating Label -->
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="occupation">
+          <label class="mdl-textfield__label" for="occupation">Occupation</label>
+          <!-- <span class="mdl-textfield__error">Input is not a number!</span> -->
+        </div>
+      </form>
+
+      <!-- dropdown list for age -->
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <select class="mdl-textfield__input" id="age" name="age">
+            <!-- using javascript to add value -->
+            <option></option>
+          </select>
+          <label class="mdl-textfield__label" for="octane">Age</label>
+        </div>
+      </form>
+
+      <!-- photo upload file -->
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--file">
+          <input class="mdl-textfield__input" placeholder="Photo" type="text" id="photo" readonly/>
+          <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
+            <i class="material-icons">attach_file</i><input type="file" id="photoURL">
+          </div>
+        </div>
+      </form>
+
+      <div class="mdl-textfield mdl-js-textfield">
+        <textarea class="mdl-textfield__input" type="text" rows="7" id="description"></textarea>
+        <label class="mdl-textfield__label" for="description">Description</label>
+      </div>
+
+    </div>
+
+    <div>
+      <p id="signInfo"></p>
+    </div>
+
+    <div class="btn-sign mdl-card__actions mdl-card--border">
+      <!-- submit button -->
+      <button id="btnSubmit" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">SUBMIT</button>
+    </div>
+
+  </div>
+
+  <!-- include js -->
+  <script src="js/config.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>
